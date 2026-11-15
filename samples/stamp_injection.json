@@ -1,0 +1,35 @@
+{
+  "version": "1.1",
+  "payload": {
+    "stamp_id": "2b9457d0-8911-4c19-8223-656200aa9b35",
+    "trace_id": "req-71a4c2883aeb",
+    "timestamp": "2026-11-15T06:47:50.537655Z",
+    "issuer": "APUM-GATEWAY-KZ-AIFC-01",
+    "jurisdiction": "KZ-AIFC",
+    "model_context": {
+      "provider": "mock",
+      "model": "qwen2.5:7b-instruct",
+      "version": "2.5.0",
+      "temperature": "0.0"
+    },
+    "verdict": "BLOCK",
+    "risk_score": 90,
+    "noise_analysis": {
+      "snr_estimate": "0.05",
+      "noise_type": "adversarial",
+      "confidence": "0.95"
+    },
+    "evidence": [
+      {
+        "type": "prompt_injection",
+        "fragment": "pattern_matched",
+        "rule": "ignore[ ]+(previous|all)[ ]+instructions"
+      }
+    ],
+    "rule_set_hash": "9c5412206e81feab07dd5c3778f24e256e33659bfa169a604589ff051984ff00",
+    "registry_version": "9c5412206e81feab07dd5c3778f24e25"
+  },
+  "audit_hash": "9acac8860ad35ba5ac7cc03c812042b420b8a37d59b2e9f99e6301f8e06caa29",
+  "signature_algorithm": "ed25519",
+  "signature": "9fa9acd65dedf733e1471023e684c4db05329cb8c12b4396a7ea5d2dfc7acacd5a9ede4fcdd7a0a4c0a381fa10a6a95f81e95ebde400acb6e377be64517fc209"
+}

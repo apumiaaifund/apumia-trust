@@ -1,0 +1,29 @@
+{
+  "version": "1.1",
+  "payload": {
+    "stamp_id": "334385f3-9892-4d15-903c-b3c0d87fd495",
+    "trace_id": "req-026f3d073b22",
+    "timestamp": "2026-11-15T06:47:50.536580Z",
+    "issuer": "APUM-GATEWAY-KZ-AIFC-01",
+    "jurisdiction": "KZ-AIFC",
+    "model_context": {
+      "provider": "mock",
+      "model": "qwen2.5:7b-instruct",
+      "version": "2.5.0",
+      "temperature": "0.0"
+    },
+    "verdict": "ALLOW",
+    "risk_score": 10,
+    "noise_analysis": {
+      "snr_estimate": "0.85",
+      "noise_type": "structural",
+      "confidence": "0.70"
+    },
+    "evidence": [],
+    "rule_set_hash": "9c5412206e81feab07dd5c3778f24e256e33659bfa169a604589ff051984ff00",
+    "registry_version": "9c5412206e81feab07dd5c3778f24e25"
+  },
+  "audit_hash": "4cc4c9980940f378efbf00f0b0716a4817992004425154bd6622bdddf8042e23",
+  "signature_algorithm": "ed25519",
+  "signature": "6cf67ccc5a61519c7fea769fa8dfe49adc3d29546fa578fc235e5b6b23d9b310614e1adbcb8cd7b4d252b1ea2ce159d507d37ec4345c4aecca05e8b01b399200"
+}
