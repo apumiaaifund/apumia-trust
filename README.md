@@ -1,26 +1,40 @@
-![PROVEN](https://img.shields.io/badge/PROVEN-38%20passed-brightgreen)
-
-
 <p align="center"><img src="assets/logo.svg" alt="logo" width="400"></p>
 
-<p align="center">
-  <img src="docs/logo.png" alt="apumia-trust-demo" width="200"/>
-</p>
+![PROVEN](https://img.shields.io/badge/PROVEN-38%20passed-brightgreen)
 
-<h1 align="center">apumia-trust-demo</h1>
+# Apumia Trust
 
-<p align="center">
-  <b>Ed25519 Trust Stamp — интерактивное демо</b><br/>
-  APUM AI Fund — воспроизводимая финансовая аналитика
-</p>
+**Ed25519 Trust Stamp для LLM. Регулятор проверяет подпись публично, не заходя в систему банка.**
 
-## О продукте
-Подпись каждого события, W3C VC-ready, tamper-evident audit trail.
+---
 
-## Выгоды
-Внешний аудитор проверяет подпись, не имея доступа к сырым данным. Используется в apumia_credit.
-Доказуемая неизменность для IC и LP без раскрытия конфиденциальных данных.
+## За 30 секунд
 
-## Связанные продукты
-Этот репозиторий является частью экосистемы [APUM AI Fund](https://github.com/apumiaaifund).
-Флагманский продукт: [apumia_credit](https://github.com/apumiaaifund/apumia_credit) (PROVEN 8/8).
+**Что это:** PUMA фильтрует вход (injection, PII), BEE проверяет выход (утечки), Trust Authority выдаёт Ed25519-подписанный Trust Stamp с SHA-256 audit hash.
+
+**Кому:** CCO / MLRO / CTO в банке и финтехе (AIFC, MAS, PDPL).
+
+**Почему сейчас:** MAS требует независимой проверки. Self-attestation не считается. Trust Stamp — артефакт, который регулятор проверяет сам, без доступа к банку.
+
+**Что доказано:** 38 passed. Реальная подпись Ed25519, tamper detection (hash_mismatch на подмену), публичная верификация через /v1/verify и standalone_verify.py. apumia prove → PROVEN.
+
+**Чего не доказано (честно):** 0 клиентов. ФСТЭК/152-ФЗ — не в коробке. NER (spacy) — опционален.
+
+---
+
+## Оффер
+
+PoC $15–25K: полный код, 38 тестов, 30 дней интеграции.
+
+**Следующий шаг:** 20-минутный звонок — покажу живую верификацию подписи, без слайдов.
+
+---
+
+## GitHub
+
+- **Private code:** apumiaaifund/apumia-trust
+- **Public demo:** apumiaaifund/apumia-trust-demo
+
+## License
+
+MIT
