@@ -58,3 +58,6 @@ MIT
 > **Контроль архитектуры (`Apumia Blueprint`):** `CLEAN` (`0` циклических зависимостей, контроль сложности McCabe)  
 > **Анализ безопасности (`Bandit / Zero-Trust`):** `0` критических уязвимостей  
 > **Протокол достоверности (`Apumia Hub`):** `_synthetic: false` | `preservation: 100.0%` | `verified: true`
+
+## Commercial Source Code & Private Repo Access
+Instant read-only GitHub repository provisioning via Stripe, Apple Pay, or PayPal: **[Buy APUMIA Trust Ed25519 SDK ($149) ↗](https://app.lava.top/products/6f4aafd2-5d92-43ed-8480-55d9536f7e7e)**
